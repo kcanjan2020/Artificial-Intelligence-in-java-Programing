@@ -1,0 +1,24 @@
+
+public class DFS {
+	public DFS(Graph g,Node n)
+	{
+		n.visit();
+		System.out.print(n.getName()+",");
+		if(g.adjacencyMap.get(n)!=null)
+		{
+		for(Node child:g.adjacencyMap.get(n))
+		{
+			if(child.isVisited()==false)
+			{
+				DFS(g,child);
+			}
+		}
+		}
+		}
+
+	private void DFS(Graph g, Node child) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

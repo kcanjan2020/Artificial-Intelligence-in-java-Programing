@@ -1,0 +1,44 @@
+Welcome to SWI-Prolog (threaded, 64 bits, version 9.0.3)
+#SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+#Please run ?- license. for legal details.
+
+#For online help and background, visit https://www.swi-prolog.org
+#For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+#?- consult("D:/Prolog/Simpsons.pl").
+#true.
+
+#?- parent(X,bart).
+#X = homer ;
+#X = marge.
+
+#?- parent(X,Y).
+#X = homer,
+#Y = bart ;
+#X = marge,
+#Y = bart ;
+#X = homer,
+#Y = lisa.
+
+#?-  */
+
+
+?- consult("D:/Prolog/Simpsons.pl").
+true.
+
+?- father(X,'bart').
+X = homer ;
+false.
+
+?- mother(X,'bart').
+X = marge.
+
+?- 
+
+?- grandmother(X,bart).
+X = mona .
+
+?- grandmother(X,bart).
+X = mona 
+
+

@@ -1,0 +1,14 @@
+?- consult('D:/Prolog/capital.pl').
+true.
+1) What is the capital of india?
+==>?- capital(X,'India').
+Output==>X = 'New Delhi'
+2. What country is paris the capital of ?
+==>?- capital('Paris',Y).
+Output==>Y = 'France'.
+3) What is Capital cities in my KB?
+==>	?- capital(X,_).
+	X = 'Kathmandu' ;
+	X = 'Paris' ;
+	X = 'Madrid'.
+	

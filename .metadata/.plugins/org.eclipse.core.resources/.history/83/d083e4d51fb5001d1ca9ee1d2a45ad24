@@ -1,0 +1,23 @@
+public class Search {
+
+	public static void main(String[] args) {
+		Node n1=new Node(1,"Arad",false,366);
+	Node n2= new Node(2,"Sibiu",false,253);
+	Node n3= new Node(3,"Fagaras",false,178);
+	Node n= new Node(7,"Zerind",false,374);
+	Node n4= new Node(4,"Oradea",false,380);
+	Node n5= new Node(5,"Timisora",false,329);
+	Node n6= new Node(6,"Lugoj",false,244);
+	Graph graph=new Graph(false);
+	graph.insertEdge(n1, n2);
+	graph.insertEdge(n1, n);
+	graph.insertEdge(n2, n3);
+	graph.insertEdge(n, n4);
+	graph.insertEdge(n1, n5);
+	graph.insertEdge(n5, n6);
+	graph.display();
+	Search s=new Search();
+	s.DFS(graph, n1);
+	}
+
+}

@@ -1,0 +1,48 @@
+public class Node implements Comparable<Node>{
+int hscore;
+Node parent=null;
+int nodeID;
+String name;
+boolean visited;
+public int compareTo(Node n)
+{
+	if(this.getHscore()==n.getHscore())
+	{
+		return 0;}
+	else if(this.getHscore()>n.getHscore())
+	{
+		return 1;
+	}
+	else
+		return -1;
+}
+public Node(int id,String city,boolean visit,int score)
+{
+nodeID=id;
+name=city;
+visited=visit;
+hscore=score;
+}
+public String getName()
+{
+	return name;
+}
+public void visit()
+{
+	visited=true;
+}
+public boolean isVisited()
+{
+	return visited;
+}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	public int getHscore()
+	{
+		return hscore;
+	}
+
+
+}

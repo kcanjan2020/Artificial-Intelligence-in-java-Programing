@@ -1,0 +1,6 @@
+INDEX VERSION 1.131+D:\Computer Engineering Note\7th Sem\1. Artificial  Intelligence\Lab_Sheet_Solution\.metadata\.plugins\org.eclipse.jdt.core
+620436700.index
+3959137331.index
+1865797976.index
+3405086192.index
+1409035338.index
