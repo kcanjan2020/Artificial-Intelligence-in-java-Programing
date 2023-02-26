@@ -1,8 +1,5 @@
 import java.util.HashMap;
 import java.util.LinkedList;
-
-import javax.xml.stream.events.StartDocument;
-
 public class Search {
 
 	public static void main(String[] args) {
@@ -85,12 +82,15 @@ public class Search {
 		graph.insertEdge(n19, n15);
 
 	graph.display();
-	Search s=new Search();
-	s.DFS(graph, n1);
-	s.breadthFirstSearch(n1,graph.adjacencyMap);
+	Search s=new Search();	
+	Search s1=new Search();
+	//s.DFS(graph, n1);
+	s1.breadthFirstSearch(n1,graph.adjacencyMap);
 	}
 	
-public void DFS(Graph g,Node n)
+//For DepthFirstSearch	
+/*
+	public void DFS(Graph g,Node n)
 {
 	n.visit();
 	System.out.print(n.getName()+",");
@@ -103,8 +103,13 @@ public void DFS(Graph g,Node n)
 			DFS(g,child);
 		}
 	}
+
 	}
 	}
+	*/
+	
+	
+//For BreadthFirstSearch	
 //node is the starting node in the graph
 void breadthFirstSearch(Node node, HashMap<Node, LinkedList<Node>> adjacencyMap){
 
@@ -125,8 +130,7 @@ void breadthFirstSearch(Node node, HashMap<Node, LinkedList<Node>> adjacencyMap)
 
          // Mark the node as visited
          currentFirst.visit();
-         System.out.print(currentFirst.getName() + " ");
-
+         System.out.print(currentFirst.getName() + "  ");
          LinkedList<Node> allNeighbors = adjacencyMap.get(currentFirst);
 
          // We have to check whether the list of neighbors is null before proceeding

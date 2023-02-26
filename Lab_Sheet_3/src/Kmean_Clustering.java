@@ -27,8 +27,8 @@ public class Kmean_Clustering{
 		Random rand=new Random();
 		for(int i=0; i<k; i++)
 		{
-			meanX[i]=rand.nextInt(1000);
-			meanY[i]=rand.nextInt(1000);
+			meanX[i]=rand.nextInt(10)+1;
+			meanY[i]=rand.nextInt(10)+1;
 		}
 		
 	}
@@ -37,8 +37,8 @@ public class Kmean_Clustering{
 		Random rand=new Random();
 		for(int i=0; i<num; i++)
 		{
-			x[i]=rand.nextInt(1000);
-			y[i]=rand.nextInt(1000);
+			x[i]=rand.nextInt(10)+1;
+			y[i]=rand.nextInt(10)+1;
 		}
 		
 	}
@@ -96,11 +96,12 @@ public class Kmean_Clustering{
 		 {
 			 if((meanX[i]==oldX[i])&& (meanY[i]==oldY[i]))
 					 {
-				 		return false;
+				 	y= false;
 					 }
 			 		else
 			 			{
-			 				return true;
+			 				y= true;
+			 				break;
 			 			}
 		 }
 		return y;
@@ -142,7 +143,7 @@ public class Kmean_Clustering{
 	
 	public static void main(String[]args)
 	{
-		Kmean_Clustering k=new Kmean_Clustering(10, 2);
+		Kmean_Clustering k=new Kmean_Clustering(25, 5);
 		k.doClustering();
 		k.display();
 	}

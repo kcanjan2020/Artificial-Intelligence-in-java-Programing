@@ -1,0 +1,20 @@
+
+public class DFS {
+	public void depthfirstsearch(Graph g,Node n)
+	{
+		n.visit();
+		System.out.print(n.getName()+",");
+		if(g.adjacencyMap.get(n)!=null)
+		{
+		for(Node child:g.adjacencyMap.get(n))
+		{
+			if(child.isVisited()==false)
+			{
+				depthfirstsearch(g,child);
+			}
+		}
+		  
+		}
+		}
+
+}

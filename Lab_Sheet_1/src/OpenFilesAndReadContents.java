@@ -16,9 +16,9 @@ public class OpenFilesAndReadContents
 
 		try
 		{
-		File file1=new File("E:\\7th Semester\\Artificial Intelligence\\AI Lab\\sports.txt");
-		File file2=new File("E:\\7th Semester\\Artificial Intelligence\\AI Lab\\entertainment.txt");
-		File file3=new File("E:\\7th Semester\\Artificial Intelligence\\AI Lab\\business.txt");
+		File file1=new File("D:\\Computer Engineering Note\\7th Sem\\1. Artificial  Intelligence\\Lab_Sheet_Solution\\Lab_Sheet_1\\sports.txt");
+		File file2=new File("D:\\Computer Engineering Note\\7th Sem\\1. Artificial  Intelligence\\Lab_Sheet_Solution\\Lab_Sheet_1\\entertainment.txt");
+		File file3=new File("D:\\Computer Engineering Note\\7th Sem\\1. Artificial  Intelligence\\Lab_Sheet_Solution\\Lab_Sheet_1\\business.txt");
 
 		BufferedReader reader1 = new BufferedReader(new FileReader(file1));
 		BufferedReader reader2 = new BufferedReader(new FileReader(file2));
